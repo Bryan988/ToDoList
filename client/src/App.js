@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from "react";
+import TaskList from "./components/TaskList";
 
 class  App extends React.Component {
   constructor(props) {
@@ -34,6 +35,8 @@ class  App extends React.Component {
               Learn React
             </a>
             <p>{this.state.apiResponse}</p>
+            <h2>ToDoList</h2>
+            <TaskList name="toDoList" tasks={["Test"]}></TaskList>
           </header>
         </div>
     );
