@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 function Task(props){
-    const [task,setTask] = useState(props.title);
+    const [task] = useState(props.title);
 
     return(
         <li> {task}</li>

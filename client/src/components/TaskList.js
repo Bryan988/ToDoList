@@ -13,7 +13,7 @@ function TaskList(props){
     return (
         <div>
             <ul>
-                {tasks.map(t=> <Task title={t}/>)}
+                {tasks.map(t=> <Task title={t.title}/>)}
             </ul>
             <TaskForm addNewTask={addTask}/>
         </div>

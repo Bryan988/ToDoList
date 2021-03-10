@@ -1,46 +1,53 @@
 import logo from './logo.svg';
 import './App.css';
-import React from "react";
+import React, {useState,useEffect} from 'react';
+import  axios from "axios"
 import TaskList from "./components/TaskList";
+import Task from "./components/Task";
+import TaskForm from "./components/TaskForm";
 
-class  App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { apiResponse: "" };
-  }
+function App() {
 
-  callAPI() {
-    fetch("http://localhost:9000/testAPI")
-        .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
-  }
+    const [apiResponse,setapiResponse] = useState([])
 
-  componentWillMount() {
-    this.callAPI();
-  }
-  render(){
+    useEffect( () => {
+        axios.get("http://localhost:9000/testAPI")
+            .then(res => {
+                setapiResponse(res.data.data)
+            })
+            .catch(e =>{
+                console.log(e)
+            })
+    },[setapiResponse]);
+
+    const addTask = (newTask)=>{
+        //addNewTask to DB
+        axios.post("http://localhost:9000/testAPI",{
+            data:apiResponse,
+            newTask:newTask
+        }).then(response =>{
+          setapiResponse([...apiResponse,{id:response.id, title: newTask}])
+        })
+
+
+        //Get the id
+        // setapiResponse
+    }
     return (
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-            <p>{this.state.apiResponse}</p>
-            <h2>ToDoList</h2>
-            <TaskList name="toDoList" tasks={["Test"]}></TaskList>
-          </header>
-        </div>
+      <div>
+          <div>
+              <h2>ToDoList</h2>
+              <ul>
+                  {apiResponse.map(t=> <Task title={t.title}/>)}
+              </ul>
+              <TaskForm addNewTask={addTask}/>
+
+          </div>
+
+
+      </div>
     );
-  }
+
 }
 
 export default App;
