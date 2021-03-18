@@ -38,7 +38,7 @@ function App() {
           <div>
               <h2>ToDoList</h2>
               <ul>
-                  {apiResponse.map(t=> <Task title={t.title}/>)}
+                  {apiResponse.map(t=> <Task task={t}/>)}
               </ul>
               <TaskForm addNewTask={addTask}/>
 

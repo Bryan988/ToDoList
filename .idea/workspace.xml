@@ -11,15 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="296b8937-f907-47ba-85dc-002f1c6ec5e5" name="Default Changelist" comment="Creating link bbetween client and API">
-      <change afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/model/Task.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/model/Iris.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/routes/communes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/model/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/model/Task.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/testAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/testAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/TaskList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TaskList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +37,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1pW841Dpm3lJAFxihoEBnsInTUs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,7 +69,18 @@
       <workItem from="1615287292300" duration="4597000" />
       <workItem from="1615321233535" duration="8924000" />
       <workItem from="1615359895714" duration="7437000" />
-      <workItem from="1615375616660" duration="2345000" />
+      <workItem from="1615375616660" duration="3511000" />
+      <workItem from="1615399446119" duration="1403000" />
+      <workItem from="1615446800974" duration="2170000" />
+      <workItem from="1615460975156" duration="600000" />
+      <workItem from="1615482968815" duration="800000" />
+      <workItem from="1615483789864" duration="2278000" />
+      <workItem from="1615540203435" duration="5706000" />
+      <workItem from="1615653222641" duration="99000" />
+      <workItem from="1615901228481" duration="169000" />
+      <workItem from="1615965165673" duration="174000" />
+      <workItem from="1615974322586" duration="21000" />
+      <workItem from="1615997170903" duration="1555000" />
     </task>
     <task id="LOCAL-00001" summary="Creating React App">
       <created>1615287784055</created>
@@ -89,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615323675270</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ADD task to the DB and see the change in live">
+      <created>1615378010075</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615378010075</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,12 +140,7 @@
     <MESSAGE value="Creating Express API" />
     <MESSAGE value="Creating link bbetween client and API" />
     <MESSAGE value="Add ToDoList on Client" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ToDoList on Client" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1615331064644">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="161" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1615331064644" />
+    <MESSAGE value="ADD task to the DB and see the change in live" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD task to the DB and see the change in live" />
   </component>
 </project>
